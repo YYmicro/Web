@@ -3,7 +3,8 @@
   export default{
     data(){
       return{
-        message : ''
+        message : '',
+        userid : ''
       }
     },
     methods:{
@@ -19,6 +20,7 @@
       getData_post(){
         //设置axios
         axios({
+          data : this.userid,
           method : 'post',
           url : 'http://127.0.0.1:5000'
         }).then((rsp) => {
@@ -32,10 +34,9 @@
 </script>
 
 <template>
-  <button @click="getData_get">get</button>
-  <button @click="getData_post">post</button>
-  <h1>姓名 : {{message.name}}</h1><br>
-  <h1>学号 : {{message.age}}</h1><br>
-  <h1>学校 : {{message.score}}</h1><br>
-  <h1>方法 : {{message.method}}</h1><br>
+  
+  <input v-model = "userid" placeholder="Your userid"/>
+  <button @click="getData_post">登录</button>
+  <h1>用户:{{message}}</h1>
+  
 </template>

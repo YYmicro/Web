@@ -26,7 +26,7 @@ class User(db.Model):
         return self.query.all()
     def select(self, key):
         if key == 'name':
-            return self.query.filter_by(name=self.name)
+            return self.query.filter_by(name=self.name).all()
         elif key == 'age':
             return self.query.filter_by(age=self.age).all()
         elif key == 'score':
