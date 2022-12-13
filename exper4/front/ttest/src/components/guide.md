@@ -54,7 +54,7 @@
 >> **props**
 >>> 
 
-> ### App/Papers.vue
+> ### App/ResearchDirect.vue
 >> **description**
 >>> 研究方向组件，类型是card
 >>>
