@@ -11,10 +11,10 @@ const handleSelect = () => {
 
 }
 onMounted(() => {
-  // let script = document.createElement('script');
-  // script.type = 'text/javascript';
-  // script.src = 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js';
-  // document.body.appendChild(script);
+  let script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src = 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js';
+  document.body.appendChild(script);
 })
 </script>
 
@@ -28,7 +28,7 @@ onMounted(() => {
       </el-col>
     </el-header>
     <el-main>
-      <!-- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <ol class="carousel-indicators">
           <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
           <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
@@ -65,7 +65,7 @@ onMounted(() => {
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </a>
-      </div> -->
+      </div>
     </el-main>
     <el-footer>Footer</el-footer>
   </el-container>
@@ -74,7 +74,7 @@ onMounted(() => {
 
 
 <style>
-/* @import "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"; */
+@import "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css";
 .el-carousel__item:nth-child(2n) {
   background-color: #99a9bf;
 }
