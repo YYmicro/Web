@@ -143,4 +143,10 @@ onMounted(() => {
   width: 400px;
   height: 350px;
 }
+.el-header{
+  padding:0px !important;
+}
+.el-main{
+  padding:0px !important;
+}
 </style>
