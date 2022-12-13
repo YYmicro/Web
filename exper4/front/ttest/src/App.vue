@@ -3,8 +3,15 @@ import { ref, reactive, onMounted } from "vue";
 // import axios from "axios";
 // import { keyBy } from "lodash-es";
 // axios.defaults.withCredentials = true;
-import MyMenu from './components/menu.vue'
+import MyMenu from './components/App/menu.vue'
 const mymenu = ref(MyMenu)
+import MyNews from './components/App/RecentNews.vue'
+const mynews = ref(MyNews)
+import MyPapers from './components/App/Papers.vue'
+const mypapers = ref(MyPapers)
+import ResearchDirect from './components/App/ResearchDirect.vue'
+const researchdirect = ref(ResearchDirect)
+
 const Carousel_img_fit = 'scale-down'
 
 const handleSelect = () => {
@@ -22,11 +29,13 @@ onMounted(() => {
 <template>
 <div class="common-layout">
   <el-container>
+    <!-- 导航栏 -->
     <el-header  justigy="space-evenly">
       <el-col :span="24">
         <mymenu defA="1"/>
       </el-col>
     </el-header>
+    <!-- 幻灯片 -->
     <el-main>
       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <ol class="carousel-indicators">
@@ -36,24 +45,58 @@ onMounted(() => {
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="./assets/App/1.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <div class="card mb-3 w-100">
+              <div class="row g-0">
+                <div class="col-md-1 bg-dark"></div>
+                <div class="col-md-7">
+                  <img src="./assets/App/HDACP.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="col-md-3">
+                  <div class="card-body">
+                    <h5 class="card-title"><b>实验室介绍</b></h5>
+                    <hr/>
+                    <p class="card-text">&nbsp;&nbsp;&nbsp;&nbsp;青海大学高性能与云计算研究所HDACP实验室(High-performance computing and Distributed systems, Computer vision and Pattern recognition)成立于2020年， 是青海大学高性能与云计算研究所开展国内外广泛交流的高性能计算与分布式系统以及计算机视觉研究的科研小组。 HDACP实验室的目标是：依托研究所，建立起具有国内外知名水平的研究组。</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="col-md-1 bg-dark"></div>
+              </div>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="./assets/App/1.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="card mb-3 w-100">
+              <div class="row g-0">
+                <div class="col-md-1 bg-dark"></div>
+                <div class="col-md-7">
+                  <img src="./assets/App/2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="col-md-3">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="col-md-1 bg-dark"></div>
+              </div>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="./assets/App/1.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <div class="card mb-3 w-100">
+              <div class="row g-0">
+                <div class="col-md-1 bg-dark"></div>
+                <div class="col-md-7">
+                  <img src="./assets/App/3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="col-md-3">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="col-md-1 bg-dark"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -66,6 +109,20 @@ onMounted(() => {
           <span class="visually-hidden">Next</span>
         </a>
       </div>
+      <br/><br/><br/><br/>
+      <el-row>
+        <el-col :span="1"></el-col>
+        <el-col :span="6">
+          <mynews />
+        </el-col>
+        <el-col :span="10">
+          <mypapers />
+        </el-col>
+        <el-col :span="6">
+          <researchdirect />
+        </el-col>
+        <el-col :span="1"></el-col>
+      </el-row>
     </el-main>
     <el-footer>Footer</el-footer>
   </el-container>

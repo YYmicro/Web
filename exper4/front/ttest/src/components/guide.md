@@ -30,7 +30,7 @@
 >>> *props2* : 参数2的描述
 >>>
 
-> ### menu.vue
+> ### App/menu.vue
 >> **description**
 >>> 导航栏组件
 >>>
@@ -40,3 +40,23 @@
 >>> *actColor(optional)* : 被选中项的背景主题颜色，使用#00ffff这种，默认值#409EFF。
 >>>
 
+> ### App/RecentNews.vue
+>> **description**
+>>> 最新动态组件，类型是card
+>>>
+>> **props**
+>>> 
+
+> ### App/Papers.vue
+>> **description**
+>>> 最新论文组件，类型是card
+>>>
+>> **props**
+>>> 
+
+> ### App/Papers.vue
+>> **description**
+>>> 研究方向组件，类型是card
+>>>
+>> **props**
+>>> 
