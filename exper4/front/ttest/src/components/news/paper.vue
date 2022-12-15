@@ -36,7 +36,7 @@ onMounted(() => {
 })
 </script>
 <template>
-<el-tabs type="border-card">
+<el-tabs tab-position="left" type="border-card">
     <el-tab-pane v-for="messages in allmessages" :key="messages" v-bind="messages" :label="messages.year">
         <el-card class="box-card card-space" v-for="content in messages.content" :key="content" v-bind="content">
             <div class="text item">
