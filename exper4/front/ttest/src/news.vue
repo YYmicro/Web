@@ -38,7 +38,7 @@ onMounted(() => {
                 <template #label>
                     <span class="custom-tabs-label">
                         <el-icon :size="20"><ChatDotSquare /></el-icon>
-                        <span class="tab-pane">&nbsp;动态</span>
+                        <span class="tab-pane-news">&nbsp;动态</span>
                     </span>
                 </template>
                 <message />
@@ -47,7 +47,7 @@ onMounted(() => {
                 <template #label>
                     <span class="custom-tabs-label">
                         <el-icon :size="20"><Tickets /></el-icon>
-                        <span class="tab-pane">&nbsp;论文</span>
+                        <span class="tab-pane-news">&nbsp;论文</span>
                     </span>
                 </template>
                 <paper />
@@ -60,9 +60,9 @@ onMounted(() => {
 
 
 <style>
-.tab-pane{
+.tab-pane-news{
     /* margin: 10px; */
-    font-size: 24px;
+    font-size: 22px;
 }
 </style>
 

@@ -3,7 +3,9 @@ import { ref, reactive, onMounted, computed } from "vue";
 import Index from './Index.vue'
 import researchIntro from './researchIntro.vue'
 import news from './news.vue'
+
 import researchProject from './researchProject.vue'
+import team from './team.vue'
 import NotFound from './NotFound.vue'
 const props = defineProps(['defA','actColor']);
 const defA = ref(props.defA);
@@ -21,6 +23,7 @@ onMounted(() => {
 const routes = {
   '/': Index,
   '/news': news,
+  '/team' : team,
   '/researchintro': researchIntro,
   '/researchproject': researchProject
 }
@@ -53,7 +56,7 @@ const currentView = computed(() => {
       <el-menu-item index="2-3">计算机视觉</el-menu-item>
       <el-menu-item index="2-3">绿色计算</el-menu-item>
     </el-sub-menu> -->
-    <el-menu-item index="3"><p class="all_font">科研团队</p></el-menu-item>
+    <el-menu-item index="3"><a href="#/team"><p class="all_font">科研团队</p></a></el-menu-item>
     <el-menu-item index="4"><a href="#/news"><p class="all_font">新闻动态</p></a></el-menu-item>
     <el-menu-item index="5"><a href="#/researchproject"><p class="all_font">科研项目</p></a></el-menu-item>
     <el-menu-item index="6"><p class="all_font">联系我们</p></el-menu-item>

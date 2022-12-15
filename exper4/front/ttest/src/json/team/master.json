@@ -1,0 +1,80 @@
+[
+    {
+        "name":"姚自强",
+        "imageurl" : "team/master/yaoziqiang.jpg",
+        "admissionyear":"2020",
+        "major":"人工智能与深度学习"
+    },
+    {
+        "name":"吴达黎",
+        "imageurl" : "team/master/wudali.jpg",
+        "admissionyear":"2020",
+        "major":"人工智能与深度学习"
+    },
+    {
+        "name":"董润婷",
+        "imageurl" : "team/master/none.png",
+        "admissionyear":"2020",
+        "major":"人工智能与深度学习"
+    },
+    {
+        "name":"刘令斌",
+        "imageurl" : "team/master/liulingbin.jpg",
+        "admissionyear":"2020",
+        "major":"大规模图计算系统"
+    },
+    {
+        "name":"黄东强",
+        "imageurl" : "team/master/huangdongqiang.jpg",
+        "admissionyear":"2020",
+        "major":"高性能计算"
+    },
+    {
+        "name":"侯天瑞",
+        "imageurl" : "team/master/houtianrui.jpg",
+        "admissionyear":"2021",
+        "major":"人工智能与深度学习"
+    },
+    {
+        "name":"姜佳凡",
+        "imageurl" : "team/master/none.png",
+        "admissionyear":"2021",
+        "major":"高性能计算"
+    },
+    {
+        "name":"张文轩",
+        "imageurl" : "team/master/none.png",
+        "admissionyear":"2021",
+        "major":"人工智能与深度学习"
+    },
+    {
+        "name":"李博录",
+        "imageurl" : "team/master/libolu.jpg",
+        "admissionyear":"2021",
+        "major":"人工智能与深度学习"
+    },
+    {
+        "name":"马晨昱",
+        "imageurl" : "team/master/machenyu.jpg",
+        "admissionyear":"2021",
+        "major":"人工智能与深度学习"
+    },
+    {
+        "name":"唐嘉豪",
+        "imageurl" : "team/master/tangjiahao.jpg",
+        "admissionyear":"2021",
+        "major":"高性能计算"
+    },
+    {
+        "name":"余航",
+        "imageurl" : "team/master/yuhang.jpg",
+        "admissionyear":"2021",
+        "major":"高性能计算"
+    },
+    {
+        "name":"李博",
+        "imageurl" : "team/master/libo.jpg",
+        "admissionyear":"2021",
+        "major":"高性能计算"
+    }
+]

@@ -7,26 +7,7 @@ const handleClick = (tab: TabsPaneContext, event: Event) => {
 }
 // console.log(props.defA)
 
-const allmessages = ref([
-    {   'year' : 2022,
-        'content' : [
-            {'title' : '祝贺：本组硕士生张琨同学论文被计算机工程(中文核心)录用',
-            'link' : ''},
-            {'title' : '祝贺：本组硕士生黄东强同学论文被郑州大学学报工学版(中文核心)录用',
-            'link' : ''},
-            {'title' : '祝贺：本组硕士生张琨同学论文被小型微型计算机系统(中文核心)录用',
-            'link' : ''},
-        ],
-    },
-    {   'year' : 2021,
-        'content' : [
-            {'title' : '祝贺：本组硕士生赵梦梦同学论文被sci期刊Energies录用',
-            'link' : ''},
-            {'title' : '祝贺：本组硕士生边浩东同学论文被sci期刊Future Generation Computer Systems录用',
-            'link' : ''},
-        ],
-    },
-])
+const allmessages = require("../../json/news/2.json")
 
 const handleSelect = () => {
 
