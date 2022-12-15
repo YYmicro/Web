@@ -42,8 +42,8 @@ onMounted(() => {
           <div class="carousel-item active">
             <div class="card mb-3 w-100">
               <div class="row g-0">
-                <div class="col-md-1 bg-dark"></div>
-                <div class="col-md-7">
+                <div class="col-md-2 bg-light"></div>
+                <div class="col-md-5">
                   <img src="./assets/Index/HDACP.png" class="d-block w-100" alt="...">
                 </div>
                 <div class="col-md-3">
@@ -54,15 +54,15 @@ onMounted(() => {
                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                   </div>
                 </div>
-                <div class="col-md-1 bg-dark"></div>
+                <div class="col-md-2 bg-light"></div>
               </div>
             </div>
           </div>
           <div class="carousel-item">
             <div class="card mb-3 w-100">
               <div class="row g-0">
-                <div class="col-md-1 bg-dark"></div>
-                <div class="col-md-7">
+                <div class="col-md-2 bg-light"></div>
+                <div class="col-md-5">
                   <img src="./assets/Index/2.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="col-md-3">
@@ -72,15 +72,15 @@ onMounted(() => {
                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                   </div>
                 </div>
-                <div class="col-md-1 bg-dark"></div>
+                <div class="col-md-2 bg-light"></div>
               </div>
             </div>
           </div>
           <div class="carousel-item">
             <div class="card mb-3 w-100">
               <div class="row g-0">
-                <div class="col-md-1 bg-dark"></div>
-                <div class="col-md-7">
+                <div class="col-md-2 bg-light"></div>
+                <div class="col-md-5">
                   <img src="./assets/Index/3.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="col-md-3">
@@ -90,7 +90,7 @@ onMounted(() => {
                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                   </div>
                 </div>
-                <div class="col-md-1 bg-dark"></div>
+                <div class="col-md-2 bg-light"></div>
               </div>
             </div>
           </div>

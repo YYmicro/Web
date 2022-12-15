@@ -40,14 +40,15 @@ const currentView = computed(() => {
         <p class="home_font all_font">HDACP</p>
       </a>
     </el-menu-item>
-    <el-sub-menu index="2">
+    <el-menu-item index="2"><a href="#/researchintro"><p class="all_font">研究介绍</p></a></el-menu-item>
+    <!-- <el-sub-menu index="2">
       <template #title><a href="#/researchintro"><p class="all_font">研究介绍</p></a></template>
       <el-menu-item index="2-1">高性能计算</el-menu-item>
       <el-menu-item index="2-2">图计算系统</el-menu-item>
       <el-menu-item index="2-3">深度学习</el-menu-item>
       <el-menu-item index="2-3">计算机视觉</el-menu-item>
       <el-menu-item index="2-3">绿色计算</el-menu-item>
-    </el-sub-menu>
+    </el-sub-menu> -->
     <el-menu-item index="3"><p class="all_font">科研团队</p></el-menu-item>
     <el-menu-item index="4"><p class="all_font">新闻动态</p></el-menu-item>
     <el-menu-item index="5"><p class="all_font">科研项目</p></el-menu-item>
