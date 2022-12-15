@@ -6,6 +6,8 @@ import news from './news.vue'
 
 import researchProject from './researchProject.vue'
 import team from './team.vue'
+
+import contactUs from './contactUs.vue'
 import NotFound from './NotFound.vue'
 const props = defineProps(['defA','actColor']);
 const defA = ref(props.defA);
@@ -25,7 +27,8 @@ const routes = {
   '/news': news,
   '/team' : team,
   '/researchintro': researchIntro,
-  '/researchproject': researchProject
+  '/researchproject': researchProject,
+  '/contactus': contactUs
 }
 // 在上面添加新的页面
 const currentPath = ref(window.location.hash)
@@ -59,7 +62,7 @@ const currentView = computed(() => {
     <el-menu-item index="3"><a href="#/team"><p class="all_font">科研团队</p></a></el-menu-item>
     <el-menu-item index="4"><a href="#/news"><p class="all_font">新闻动态</p></a></el-menu-item>
     <el-menu-item index="5"><a href="#/researchproject"><p class="all_font">科研项目</p></a></el-menu-item>
-    <el-menu-item index="6"><p class="all_font">联系我们</p></el-menu-item>
+    <el-menu-item index="6"><a href="#/contactus"><p class="all_font">联系我们</p></a></el-menu-item>
   </el-menu>
   <component :is="currentView" />
 </template>
