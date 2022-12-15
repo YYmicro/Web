@@ -3,7 +3,10 @@ import { ref, reactive, onMounted, computed } from "vue";
 import Index from './Index.vue'
 import researchIntro from './researchIntro.vue'
 import news from './news.vue'
+
 import researchProject from './researchProject.vue'
+import team from './team.vue'
+
 import contactUs from './contactUs.vue'
 import NotFound from './NotFound.vue'
 const props = defineProps(['defA','actColor']);
@@ -22,6 +25,7 @@ onMounted(() => {
 const routes = {
   '/': Index,
   '/news': news,
+  '/team' : team,
   '/researchintro': researchIntro,
   '/researchproject': researchProject,
   '/contactus': contactUs
