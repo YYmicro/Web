@@ -6,7 +6,8 @@ import researchIntro from './researchIntro.vue'
 import news from './news.vue'
 import researchProject from './researchProject.vue'
 import team from './team.vue'
-import t_wxy from "./components/team/t_resume/wxy.vue"
+  import t_wxy from "./components/team/t_resume/wxy.vue"
+  import t_hjq from "./components/team/t_resume/hjq.vue"
 import contactUs from './contactUs.vue'
 import NotFound from './NotFound.vue'
 
@@ -28,6 +29,7 @@ const routes = {
   '/news': news,
   '/team' : team,
   '/team/teachar/wxy' : t_wxy,
+  '/team/teachar/hjq' : t_hjq,
   '/researchintro': researchIntro,
   '/researchproject': researchProject,
   '/contactus': contactUs

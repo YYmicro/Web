@@ -28,7 +28,7 @@ onMounted(() => {
 <template>
 <el-space wrap size="large">
   <el-card style="margin: 20px;" v-for="teacher in allteachers" :key="teacher">
-    <el-link href="#/team/teachar/wxy"><el-image :src="teacher.imageurl" class="card-image"/></el-link>
+    <el-link :href="teacher.link"><el-image :src="teacher.imageurl" class="card-image"/></el-link>
       <el-tabs v-model="activeName" class="demo-tabs" @tab-click="handleClick">
         <el-tab-pane label="姓名" name="first" class="card-name-font">{{teacher.name}}</el-tab-pane>
         <el-tab-pane label="职位" name="second" class="card-title-font">{{teacher.qhu_title}}</el-tab-pane>
