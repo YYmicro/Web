@@ -5,8 +5,10 @@ import type { TabsPaneContext } from 'element-plus'
 
 import Teacher from './components/team/teacher.vue'
 import Master from './components/team/master.vue'
+import Graduate from './components/team/graduate.vue'
 const teacher = ref(Teacher)
 const master = ref(Master)
+const graduate = ref(Graduate)
 
 const activeName = ref('first')
 
@@ -62,7 +64,7 @@ onMounted(() => {
                 <span class="tab-pane-team">&nbsp;毕业学生</span>
                 </span>
             </template>
-            Route
+            <graduate />
             </el-tab-pane>
         </el-tabs>
     </el-col>

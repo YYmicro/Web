@@ -1,62 +1,74 @@
 [
     {
         "name":"吴环",
+        "imageurl" : "team/graduate/none.png",
         "graduateyear":"2018",
         "to":"美国波特兰州立大学"
     },
     {
         "name":"杨雪娇",
+        "imageurl" : "team/graduate/none.png",
         "graduateyear":"2019",
         "to":"新华三集团"
     },
     {
         "name":"罗佩聪",
+        "imageurl" : "team/graduate/none.png",
         "graduateyear":"2020",
         "to":"中国人民银行"
     },
     {
         "name":"李玉玲",
+        "imageurl" : "team/graduate/none.png",
         "graduateyear":"2020",
         "to":"青海省电力公司电力科学研究院"
     },
     {
         "name":"严文昕",
+        "imageurl" : "team/graduate/none.png",
         "graduateyear":"2021",
         "to":"广州北羊信息技术有限公司"
     },
     {
         "name":"黄鼎昌",
+        "imageurl" : "team/graduate/none.png",
         "graduateyear":"2021",
         "to":"国家电投五凌电力有限公司"
     },
     {
         "name":"赵梦梦",
+        "imageurl" : "team/graduate/none.png",
         "graduateyear":"2022",
         "to":"小米公司"
     },
     {
         "name":"张琨",
+        "imageurl" : "team/graduate/zhangkun.jpg",
         "graduateyear":"2022",
         "to":"联想公司"
     },
     {
         "name":"李凯",
+        "imageurl" : "team/graduate/likai.jpg",
         "graduateyear":"2020",
         "to":"清华大学"
     },
     {
         "name":"杨圣豪",
+        "imageurl" : "team/graduate/yangshenghao.jpg",
         "graduateyear":"2020",
         "to":"清华大学"
     },
     {
         "name":"凌龙",
+        "imageurl" : "team/graduate/linglong.jpg",
         "graduateyear":"2021",
         "to":"北京航空航天大学"
     },
     {
         "name":"陈玉婷",
+        "imageurl" : "team/graduate/chenyuting.jpg",
         "graduateyear":"2021",
         "to":"青海电信"
-    },
+    }
 ]

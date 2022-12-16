@@ -8,6 +8,11 @@ import researchProject from './researchProject.vue'
 import team from './team.vue'
   import t_wxy from "./components/team/t_resume/wxy.vue"
   import t_hjq from "./components/team/t_resume/hjq.vue"
+  import t_jjf from "./components/team/t_resume/jjf.vue"
+  import t_zy from "./components/team/t_resume/zy.vue"
+  import t_zgj from "./components/team/t_resume/zgj.vue"
+  import t_wl from "./components/team/t_resume/wl.vue"
+  import t_bhd from "./components/team/t_resume/bhd.vue"
 import contactUs from './contactUs.vue'
 import NotFound from './NotFound.vue'
 
@@ -28,8 +33,13 @@ const routes = {
   '/': Index,
   '/news': news,
   '/team' : team,
-  '/team/teachar/wxy' : t_wxy,
-  '/team/teachar/hjq' : t_hjq,
+  '/team/teacher/wxy' : t_wxy,
+  '/team/teacher/hjq' : t_hjq,
+  '/team/teacher/jjf' : t_jjf,
+  '/team/teacher/zy' : t_zy,
+  '/team/teacher/zgj' : t_zgj,
+  '/team/teacher/wl' : t_wl,
+  '/team/teacher/bhd' : t_bhd,
   '/researchintro': researchIntro,
   '/researchproject': researchProject,
   '/contactus': contactUs

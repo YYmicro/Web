@@ -26,7 +26,7 @@ onMounted(() => {
 
 <template>
 <el-space wrap size="large">
-  <el-card style="margin: 20px;" v-for="teacher in allmasters" :key="teacher">
+  <el-card style="margin: 10px;" v-for="teacher in allmasters" :key="teacher">
     <el-image :src="teacher.imageurl" class="card-image"/>
       <el-tabs v-model="activeName" class="demo-tabs" @tab-click="handleClick">
         <el-tab-pane label="姓名" name="first" class="card-name-font">{{teacher.name}}</el-tab-pane>

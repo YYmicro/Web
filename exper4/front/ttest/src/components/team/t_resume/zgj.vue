@@ -3,31 +3,21 @@ import { ref, reactive, onMounted } from "vue";
 import type { TabsPaneContext } from 'element-plus'
 
 var t_messages = {
-        "name" : "贾金芳",
-        "imageurl" : "team/teacher/jjf.jpg",
+        "name" : " 张国晶",
+        "imageurl" : "team/teacher/zgj.jpg",
         "qhu_title" : "讲师",
-        "edu_title" : "华东理工大学博士（在读)",
-        "email" : "qhu_jf@163.com",
-        "academic_title" : "中国计算机学会（CCF）会员",
-        "academic_part_time_job" : "Journal of supercomputing审稿人（国际知名SCI期刊）",
-        "main_studying_direction" : "高性能计算、并行算法优化、机器学习",
+        "edu_title" : "青海大学(硕士)",
+        "email" : "15297197253",
+        "main_studying_direction" : "高性能计算",
+        "individual_resume" : "2014年7月本科毕业于青海大学计算机技术与应用系计算机 科学与技术专业,获得工学学士。2017年7月硕士毕业于青海大学机械设计及理论专业， 年8月到青海大学计算机技术与应用系工作至今。目前担任《计算机应用基础》等课程的主讲工作。",
         "related_research_situation" : [
-            {"name" : "教育部春晖计划科研基金项目“基于OpenCL异构并行算法的材料微观组织模拟研究”,", "position" : "主持"},
-            {"name" : "青海大学中青年科研基金项目“MPI/CUDA并行技术在材料模拟计算中的应用”，", "position" : "主持"},
-            {"name" : "“青海电网数值天气预报子系统部署与运维保障”，", "position" : "主持"},
-            {"name" : "青海省科技计划项目“GRAPES数值天气预报模式动力框架大规模并行算法与优化技术研究”，", "position" : "第一参与"},
-            {"name" : "国家自然科学基金项目“智能电网影响感知的数据中心需求响应策略与机制研究”，", "position" : "参与"},
-            {"name" : "“基于多源卫星的天河工程数据集成平台”，", "position" : "参与"},
-           ],
-        "papers" : ["Ma, Chenyu, <b>Jia, Jinfang*</b>, Liu, Zhen, Huang, Jianqiang, Wang, Xiaoying. Simulation of three-dimensional phase field model with LBM method using OpenCL. The Journal of Supercomputing, 2022:1-19. https://doi.org/10.1007/s11227- 022-04321-w （CCF C, SCI期刊）",
-                    "张琨,<b>贾金芳*</b>,黄建强,王晓英,严文昕. 预处理共轭梯度算法异构并行求解及优化.小型微型计算机系统,2021.https://kns.cnki.net/kcms/detail/ 21.1106.tp. 20210818.0900.006.html （CCF B, CSCD核心期刊）",
-                    "张琨, <b>贾金芳*</b> ,严文昕,黄建强,王晓英. GRAPES动力框架中大规模稀疏线性系统并行求解及优化[J].计算机工程,2022,48(01):149-154+162.（CCF C, CSCD核心期刊）",
-                    "Yan Wenxin; <b>Jinfang Jia*</b>; Huang Jianqiang; Xiaoying Wang; Research of GRAPES Numerical weather Prediction Model, In Proceedings of the 2020 4th High Performance Computing and Cluster Technologies Conference & 2020 3rd International Conference on Big Data and Artificial Intelligence (HPCCT & BDAI 2020),Qingdao China, 2020.",
-                    "Yan Wenxin; <b>Jinfang Jia*</b>; Kun Zhang; Huang Jianqiang; Xiaoying Wang; Solving algorithm and parallel optimization of Helmholtz equation in GRAPES model, CONFCDS 2021.（EI、ISTP）",
-                    "Xiaodong Hu; Huanli Xu; <b>Jinfang Jia*</b>; Xiaoying Wang; Research on distributed storage and query optimization of multi-source heterogeneous meteorological data, the 2018 International Conference on Cloud Computing and Internet of Things (CCIOT 2018),Singapore, 2018.",
-
-            ]
-        
+            {"name" : "应用间歇性可再生能源的数据中心资源与能耗管理模型与算法", "position" : "（参与科研）"},
+            ],
+        "papers" : ["<b>Guojing Zhang</b>, Xiaoying Wang*, Mengqin Yang. Managing and Scheduling Approximate Applications to Utilize Renewable Energy in Cloud Computing Datacenters. APPLIED ECOLOGY AND ENVIRONMENTAL RESEARCH, 2017, 15(3):307-321. (SCI)",
+                    "<b>Guojing Zhang</b>, Xiaoying Wang*, Zhihui Du. Research on the Prediction of Solar Energy Generation based on Measured Environmental Data. International Journal of u- and e- Service, Science and Technology. 2015: 8(5): 385-402. （EI检索号：20152600975359）",
+                    "<b>Guojing Zhang</b>, Xiaoying Wang*, Zhihui Du. Review of Heterogeneous Computing based on GPU. 2015 International Conference on Informatics, Control and Automation (ICA2015), July, 2015, Phuket, Thailand, pp.175-180. （ISTP检索号：000377614100032）",
+                    "Xiaoying Wang, <b>Guojing Zhang</b>, Mengqin Yang. Chapter title: Green-aware Virtual Machine Migration Strategy in Sustainable Cloud Computing Environments. Cloud Computing (ISBN 978-953-51-4932-3) 已录用,待出版",
+                ]
     }
 
 t_messages.imageurl = require("../../../assets/" + t_messages.imageurl)
@@ -76,22 +66,10 @@ const previewPDF = () => {
                         <template #label>
                             <span class="custom-tabs-label">
                             <el-icon><calendar /></el-icon>
-                            <span>学术兼职</span>
+                            <span>个人简介</span>
                             </span>
                         </template>
-                        <p v-html="t_messages.academic_part_time_job"></p>
-                        </el-tab-pane>
-                    </el-tabs>
-                    <br/>
-                    <el-tabs type="card" class="demo-tabs">
-                        <el-tab-pane>
-                        <template #label>
-                            <span class="custom-tabs-label">
-                            <el-icon><calendar /></el-icon>
-                            <span>学术职称</span>
-                            </span>
-                        </template>
-                        {{t_messages.academic_title}}
+                        <p>{{t_messages.individual_resume}}</p>
                         </el-tab-pane>
                     </el-tabs>
                     <br/>

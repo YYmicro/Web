@@ -69,7 +69,7 @@ const handleClick = (tab: TabsPaneContext, event: Event) => {
 }
 
 const previewPDF = () => {
-   let url = `http://mozilla.github.io/pdf.js/web/compressed.tracemonkey-pldi-09.pdf`;
+   let url = `https://github.com/Xiamu-ssr/Web/blob/main/exper4/front/ttest/src/components/team/t_resume/Letter.pdf`;
    window.open(url, "_blank");
 };
 </script>

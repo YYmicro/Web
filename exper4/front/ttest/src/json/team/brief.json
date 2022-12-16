@@ -4,49 +4,49 @@
         "imageurl" : "team/teacher/wxy.png",
         "qhu_title" : "教授",
         "email" : "Wxy_cta@qhu.edu.cn",
-        "link" : "#/team/teachar/wxy"
+        "link" : "#/team/teacher/wxy"
     },
     {
         "name" : "黄建强",
         "imageurl" : "team/teacher/hjq.png",
         "qhu_title" : "教授",
         "email" : "hjqxaly@163.com",
-        "link" : "#/team/teachar/hjq"
+        "link" : "#/team/teacher/hjq"
     },
     {
         "name" : "贾金芳",
         "imageurl" : "team/teacher/jjf.jpg",
         "qhu_title" : "讲师",
         "email" : "qhu_jf@163.com",
-        "link" : "#/team/teachar/wxy"
+        "link" : "#/team/teacher/jjf"
     },
     {
         "name" : "朱宇",
         "imageurl" : "team/teacher/zhuyu.jpg",
         "qhu_title" : "讲师",
         "email" : "sdcxzhuyu@163.com",
-        "link" : "#/team/teachar/wxy"
+        "link" : "#/team/teacher/zy"
     },
     {
         "name" : "张国晶",
         "imageurl" : "team/teacher/zgj.jpg",
         "qhu_title" : "讲师",
         "email" : "15297197253",
-        "link" : "#/team/teachar/wxy"
+        "link" : "#/team/teacher/zgj"
     },
     {
         "name" : "吴利",
         "imageurl" : "team/teacher/wl.jpg",
         "qhu_title" : "助教",
         "email" : "wuli_qhu@163.com",
-        "link" : "#/team/teachar/wxy"
+        "link" : "#/team/teacher/wl"
     },
     {
         "name" : "边浩东",
         "imageurl" : "team/teacher/bhd.jpg",
         "qhu_title" : "助教",
         "email" : "hpc_bhd@163.com",
-        "link" : "#/team/teachar/wxy"
+        "link" : "#/team/teacher/bhd"
     }
 
 ]
