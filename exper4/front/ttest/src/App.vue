@@ -1,14 +1,15 @@
 <script setup>
 import { ref, reactive, onMounted, computed } from "vue";
+
 import Index from './Index.vue'
 import researchIntro from './researchIntro.vue'
 import news from './news.vue'
-
 import researchProject from './researchProject.vue'
 import team from './team.vue'
-
+import t_wxy from "./components/team/t_resume/wxy.vue"
 import contactUs from './contactUs.vue'
 import NotFound from './NotFound.vue'
+
 const props = defineProps(['defA','actColor']);
 const defA = ref(props.defA);
 const active_color = ref("#409EFF");
@@ -26,6 +27,7 @@ const routes = {
   '/': Index,
   '/news': news,
   '/team' : team,
+  '/team/teachar/wxy' : t_wxy,
   '/researchintro': researchIntro,
   '/researchproject': researchProject,
   '/contactus': contactUs

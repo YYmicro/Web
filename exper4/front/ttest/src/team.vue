@@ -1,5 +1,6 @@
 <script lang="ts" setup>
-import { ref, reactive, onMounted } from "vue";
+
+import { onErrorCaptured, ref, reactive, onMounted } from "vue";
 import type { TabsPaneContext } from 'element-plus'
 
 import Teacher from './components/team/teacher.vue'
@@ -17,8 +18,13 @@ const handleClick = (tab: TabsPaneContext, event: Event) => {
 const handleSelect = () => {
 
 }
-onMounted(() => {
 
+onErrorCaptured(err => {
+  console.log('Caught error', err.message)
+  window.location.reload();
+  return false
+})
+onMounted(() => {
 })
 </script>
 
@@ -36,6 +42,9 @@ onMounted(() => {
                 </span>
             </template>
             <teacher />
+            <!-- <KeepAlive> -->
+                <!-- <teacher :is="activeComponent"/> -->
+            <!-- </KeepAlive> -->
             </el-tab-pane>
             <el-tab-pane>
             <template #label>
