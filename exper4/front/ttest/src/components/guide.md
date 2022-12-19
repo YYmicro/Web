@@ -19,7 +19,7 @@
 
 ***
 
-## 所有组件
+## 部分组件(已弃用)
 > ### demo.vue
 >> **description**
 >>> guide.md的组件撰写demo。

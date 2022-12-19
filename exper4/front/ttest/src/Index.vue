@@ -44,7 +44,7 @@ onMounted(() => {
               <div class="row g-0">
                 <div class="col-md-2 bg-light"></div>
                 <div class="col-md-5">
-                  <img src="./assets/Index/HDACP.png" class="d-block w-100" alt="...">
+                  <img src="./assets/Index/1.png" class="d-block w-100" alt="...">
                 </div>
                 <div class="col-md-3">
                   <div class="card-body">
@@ -119,13 +119,50 @@ onMounted(() => {
         <el-col :span="1"></el-col>
       </el-row>
     </el-main>
-    <el-footer>Footer</el-footer>
+    <!-- <br/><br/><br/><br/> -->
+    <!-- <el-footer>
+      <el-row style="background-color: rgba(0, 0, 0,0.22); color:black; padding-top: 50px;">
+        <el-col :span="1"></el-col>
+        <el-col :span="6">
+          <el-row>
+            <el-col :span="18">
+              <el-image class="image-hover" :src='require("./assets/Index/fig0.png")' />
+            </el-col>
+            <el-col :span="6"></el-col>
+          </el-row>
+        </el-col>
+        <el-col :span="1"></el-col>
+        <el-col :span="8">
+          <h5>扫描下方二维码关注青海大学计算机系公众号</h5>
+          <el-row>
+            <el-col :span="6">
+              <el-image :src='require("./assets/Index/qrcode.jpg")' />
+            </el-col>
+            <el-col :span="18"></el-col>
+          </el-row>
+          
+        </el-col>
+        <el-col :span="1"></el-col>
+        <el-col :span="6">
+          <h5>地址</h5>
+          <el-link>青海省西宁市宁大路251号</el-link><br/>
+          <el-link>青海大学计算机技术与应用系111实验室</el-link><br/>
+          <el-divider/>
+          <h5>常用链接</h5>
+          <el-link href="https://www.qhu.edu.cn/">青海大学</el-link><br/>
+          <el-link href="https://cs.qhu.edu.cn/">青海大学计算机技术与应用系</el-link><br/>
+          <el-link href="https://www.ccf.org.cn/">中国计算机学会</el-link><br/>
+          
+        </el-col>
+        <el-col :span="1"></el-col>
+      </el-row>
+    </el-footer> -->
   </el-container>
 </div>
 </template>
 
 
-<style>
+<style scoped>
 @import "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css";
 .el-carousel__item:nth-child(2n) {
   background-color: #99a9bf;
@@ -143,5 +180,29 @@ onMounted(() => {
 }
 .el-main{
   padding:0px !important;
+}
+@keyframes example {
+  0%    {}
+  10%   {transform: rotateX(120deg) scale(1.05,1.05);}
+  20%   {transform: rotateX(120deg) scale(1.10,1.10);}
+  30%   {transform: rotateX(120deg) rotateY(120deg)  scale(1.15,1.15);}
+  40%   {transform: rotateY(120deg) scale(1.20,1.20);}
+  50%   {transform: rotateY(120deg) rotateZ(120deg) scale(1.25,1.25);}
+  60%   {transform: rotateZ(120deg) scale(1.30,1.30);}
+  70%   {transform: rotateZ(120deg) scale(1.35,1.35);}
+  80%   {transform: scale(1.40,1.40);}
+  90%   {transform: scale(1.25,1.25);}
+  100%  {transform: scale(1,1);}
+}
+.image-hover{
+  
+}
+.image-hover:hover{
+  /* transition: transform 0.6s; */
+    /* transform: scale(0.95,0.95); */
+    animation-name: example;
+    animation-duration: 3s;
+    /* animation-iteration-count: 1; */
+    animation-fill-mode: both;
 }
 </style>

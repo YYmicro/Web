@@ -4,11 +4,12 @@ import { ref, reactive, onMounted } from "vue";
 const props = defineProps([]);
 // console.log(props.defA)
 
-const news_titles = ['祝贺: 实验室王晓英教授遴选为青海大学博士生导师',
-                    '祝贺: 实验室黄建强教授遴选为青海大学博士生导师',
-                    '祝贺: 实验室朱宇博士遴选为青海大学硕士生导师',
-                    '第二十四届IEEE International Conference on High Performance Computing and Communications (HPCC-2022)正在征文',
+
+const papers_titles = ['祝贺：本组硕士生张琨同学论文被计算机工程(中文核心)录用',
+                      '祝贺：本组硕士生黄东强同学论文被郑州大学学报工学版(中文核心)录用',
+                      '祝贺：本组硕士生张琨同学论文被小型微型计算机系统(中文核心)录用',
 ]
+
 
 
 const handleSelect = () => {
@@ -24,26 +25,36 @@ onMounted(() => {
 
 <template>
     <div class="card w-100 p-2" style="border: none;">
-        <img src="../../assets/Index/1.jpg" class="card-img-top w-100">
-        <div class="card-body mybg">
-            <h5 class="card-title"><b>最新动态</b></h5>
-            <el-card class="news_card" shadow="hover" v-for="news_title in news_titles" :key="news_title">{{news_title}}</el-card>
-        </div>
+    <el-image :src='require("../../assets/Index/t1.jpg")' class="card-img-top w-100"/>
+    <div class="card-body mybg">
+        <h5 class="card-title" style="display: inline; color: #0d6efd;"><span style="font-weight: lighter;">最新论文</span></h5>&nbsp;<el-link href="#/news" type="info">更多></el-link>
+        <el-divider />
+        <el-card class="news_card card-hover" style="margin: 10px;" shadow="hover" v-for="papers_title in papers_titles" :key="papers_title"><el-icon :size="20" color=#ffe69c><Opportunity /></el-icon>&nbsp;{{papers_title}}</el-card>
     </div>
+    </div>
+    
 </template>
 
-<style>
+<style scoped>
 @import "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css";
 
 .mybg{
-    background-color: rgba(0, 0, 0, 0.15);
+    background-color: rgba(0, 0, 0, 0.07);
 }
 
-.news_card{
-    font-weight: bold;
-    color: rgb(0, 156, 189);
-    margin: 2px;
+@keyframes example {
+  0%   {transform: scale(0.98,0.98);}
+  25%  {transform: scale(0.96,0.96);box-shadow: 0 0 2px 1px #0d6efd33;}
+  50%  {transform: scale(0.94,0.94);box-shadow: 0 0 4px 2px #0d6efd66;}
+  100% {transform: scale(0.92,0.92);box-shadow: 0 0 6px 3px #0d6efd99;}
 }
-
+.card-hover:hover{
+    /* transition: transform 0.6s; */
+    /* transform: scale(0.95,0.95); */
+    animation-name: example;
+    animation-duration: 0.3s;
+    /* animation-iteration-count: 1; */
+    animation-fill-mode: both;
+}
 </style>
 

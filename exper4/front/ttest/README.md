@@ -22,13 +22,3 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
-
-***
-> # src下存网页，src/components下存组件，src/assets下存图片
->**assets下文件夹名和网页名一致，存放对应网页所用图片**
->**components下文件夹名和网页名一致，存放对应网页所用组件**
->> ## src下所有网页介绍
->>> ### App.vue : 导航栏引入网页
->>> ### Index.vue : 主页
->>> ### researchIntro.vue : 研究介绍
->>> ### news.vue : 新闻动态
