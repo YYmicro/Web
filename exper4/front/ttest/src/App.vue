@@ -15,6 +15,9 @@ import team from './team.vue'
   import t_bhd from "./components/team/t_resume/bhd.vue"
 import contactUs from './contactUs.vue'
 import Markdown from './markdown.vue'
+  import Addnewmd from "./components/markdown/addnewmd.vue"
+  import Display from "./components/markdown/display.vue"
+  import Fixmd from "./components/markdown/fixmd.vue"
 import NotFound from './NotFound.vue'
 
 const props = defineProps(['defA','actColor']);
@@ -44,7 +47,10 @@ const routes = {
   '/researchintro': researchIntro,
   '/researchproject': researchProject,
   '/contactus': contactUs,
-  '/markdown' : Markdown
+  '/markdown' : Markdown,
+  '/markdown/addnewmd' : Addnewmd,
+  '/markdown/display' : Display,
+  '/markdown/fixmd' : Fixmd
 }
 // 在上面添加新的页面
 const currentPath = ref(window.location.hash)

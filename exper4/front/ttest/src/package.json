@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@kangc/v-md-editor": "next",
     "axios": "^1.2.1"
   }
 }

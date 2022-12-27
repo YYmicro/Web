@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "vue-markdown-loader": "^2.5.0",
+    "vue-property-decorator": "^9.1.2"
+  },
+  "dependencies": {
+    "vue3-markdown-it": "^1.0.10"
+  }
+}
