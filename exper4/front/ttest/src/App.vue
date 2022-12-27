@@ -14,6 +14,7 @@ import team from './team.vue'
   import t_wl from "./components/team/t_resume/wl.vue"
   import t_bhd from "./components/team/t_resume/bhd.vue"
 import contactUs from './contactUs.vue'
+import Markdown from './markdown.vue'
 import NotFound from './NotFound.vue'
 
 const props = defineProps(['defA','actColor']);
@@ -42,7 +43,8 @@ const routes = {
   '/team/teacher/bhd' : t_bhd,
   '/researchintro': researchIntro,
   '/researchproject': researchProject,
-  '/contactus': contactUs
+  '/contactus': contactUs,
+  '/markdown' : Markdown
 }
 // 在上面添加新的页面
 const currentPath = ref(window.location.hash)
@@ -77,6 +79,7 @@ const currentView = computed(() => {
     <el-menu-item index="4"><a href="#/news"><p class="all_font">新闻动态</p></a></el-menu-item>
     <el-menu-item index="5"><a href="#/researchproject"><p class="all_font">科研项目</p></a></el-menu-item>
     <el-menu-item index="6"><a href="#/contactus"><p class="all_font">联系我们</p></a></el-menu-item>
+    <el-menu-item index="7"><a href="#/markdown"><p class="all_font">帮助文档</p></a></el-menu-item>
   </el-menu>
   <component :is="currentView" />
   <br/><br/><br/><br/>

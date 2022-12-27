@@ -12,6 +12,7 @@ from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)
 #axios通信设置
 app.config['SECRET_KEY'] = os.urandom(24)
+# CORS(app)#"supports_credentials": True, 
 CORS(app, resources={r"/*": {"origins":'*', "supports_credentials": True}})#"supports_credentials": True, 
 user_id_set = 0
 session_backups = []
@@ -22,18 +23,14 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
 #User表相关操作
-class User(db.Model):
-    __tablename__ = 'user'
-    userid = db.Column(db.String, primary_key = True)
-    name = db.Column(db.String)
-    level = db.Column(db.Integer)
-    email = db.Column(db.String)
+class MD(db.Model):
+    __tablename__ = 'md'
+    id = db.Column(db.String, primary_key = True)
+    title = db.Column(db.String)
     
-    def __init__(self, v_userid = None, v_name = None, v_level = None, v_email = None):
-        self.userid = v_userid
-        self.password = v_password
-        self.name = v_name
-        self.email = v_email
+    def __init__(self, v_id = None, v_title = None):
+        self.id = v_id
+        self.title = v_title
 
     def select_all(self):
         return self.query.all()
@@ -54,16 +51,18 @@ class User(db.Model):
 
 @app.route('/', methods=['POST', 'GET'])
 def func():
-    userid = request.get_data().decode("utf-8")
-    user = User()
-    res0 = user.select('userid', userid)
+    # userid = request.get_data().decode("utf-8")
+    md = MD()
+    res0 = md.select_all()
     rsp = None
     if res0 != []:
-        rsp = make_response(jsonify({'message' : res0[0].name}), 200)
+        rsp = make_response(jsonify({'message' : res0}), 200)
     else:
         rsp = make_response(jsonify({'message' : '无此用户'}), 200)
-    print(rsp)
-    rsp.headers['Access-Control-Allow-Origin'] = '*'
+    print(jsonify({'message' : res0}))
+    rsp.headers['Access-Control-Allow-Origin'] = 'http://localhost:8080/'
+    rsp.headers['Access-Control-Allow-Credentials'] = 'true'
+    
     return rsp
 
 if __name__ == '__main__':
