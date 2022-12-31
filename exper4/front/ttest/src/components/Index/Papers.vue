@@ -50,10 +50,10 @@ onMounted(() => {
 }
 
 @keyframes example {
-  0%   {transform: scale(0.98,0.98);}
-  25%  {transform: scale(0.96,0.96);box-shadow: 0 0 2px 1px #0d6efd33;}
-  50%  {transform: scale(0.94,0.94);box-shadow: 0 0 4px 2px #0d6efd66;}
-  100% {transform: scale(0.92,0.92);box-shadow: 0 0 6px 3px #0d6efd99;}
+  0%   {transform: scale(1,1);}
+  25%  {transform: scale(1.02,1.02);box-shadow: 0 0 2px 1px #0d6efd33;}
+  50%  {transform: scale(1.04,1.04);box-shadow: 0 0 4px 2px #0d6efd66;}
+  100% {transform: scale(1.06,1.06);box-shadow: 0 0 6px 3px #0d6efd99;}
 }
 .card-hover:hover{
     /* transition: transform 0.6s; */

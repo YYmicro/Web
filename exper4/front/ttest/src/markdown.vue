@@ -63,18 +63,18 @@ function changemd(id) {
             <el-tab-pane label="帮助文档">
                 <el-space wrap size="large">
                     <!-- <a href="#/markdown/display"> -->
-                    <el-card v-for="m in message" @click="changemd(m.id)">
+                    <el-card v-for="m in message" @click="changemd(m.id)" class="card-hover">
                         <el-icon :size="60"><InfoFilled /></el-icon><br/>
                         {{ m.title }}
                         <br/>
                         <el-button :style="deletestatus" @click="deletemd(m.id)" type="danger">X</el-button>
                     </el-card>
                     <!-- </a> -->
-                    <el-card>
+                    <el-card class="card-hover">
                         <el-icon :size="60"><Plus /></el-icon><br/>
                         <a href="#/markdown/addnewmd"><el-button type="primary">添加新文档</el-button></a>
                     </el-card>
-                    <el-card >
+                    <el-card class="card-hover">
                         <el-icon :size="60"><Minus /></el-icon><br/>
                         <el-button @click="deleteable" type="warning">删除文档</el-button>
                     </el-card>
@@ -89,5 +89,18 @@ function changemd(id) {
 </template>
   
 <style scoped>
-
+@keyframes example {
+  0%   {transform: scale(1,1);}
+  25%  {transform: scale(1.01,1.01);box-shadow: 0 0 2px 1px #0d6efd33;}
+  50%  {transform: scale(1.02,1.02);box-shadow: 0 0 4px 2px #0d6efd66;}
+  100% {transform: scale(1.03,1.03);box-shadow: 0 0 6px 3px #0d6efd99;}
+}
+.card-hover:hover{
+    /* transition: transform 0.6s; */
+    /* transform: scale(0.95,0.95); */
+    animation-name: example;
+    animation-duration: 0.3s;
+    /* animation-iteration-count: 1; */
+    animation-fill-mode: both;
+}
 </style>
