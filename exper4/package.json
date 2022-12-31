@@ -3,7 +3,9 @@
     "vue-router": "^4.1.6"
   },
   "dependencies": {
+    "source-map-resolve": "^0.5.3",
     "vue": "^3.2.45",
+    "vue-codemod": "^0.0.5",
     "vue-router": "^4.1.6"
   }
 }
